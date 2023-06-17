@@ -22,13 +22,11 @@ test.describe('Factorial calculator', () => {
     }
   });
 
-  test.only('Api response is correct', async ({page}) => {
+  test('Api response is correct', async ({page}) => {
     const calc = new CalculatorPage(page);
     const resultsApiArr = await calc.testApiValues();
     const matchResultsArr = await calc.calculateFactorialRange()
-    console.log(matchResultsArr)
     for (let num in resultsApiArr) {
-      console.log(num)
       const resultApi = resultsApiArr[num]
       const matchResult = matchResultsArr[num]
       console.log(`API Result: ${resultApi}`);
@@ -38,8 +36,19 @@ test.describe('Factorial calculator', () => {
     }
   })
 
-  test('UI response is correct', async () => {
-    //TODO: write tests to test directly /factorial endpoint and dismiss UI validations
+  test('UI response is correct', async ({page}) => {
+    const calc = new CalculatorPage(page);
+    const [resultsUiArr] = await calc.testValues();
+    const matchResultsArr = await calc.calculateFactorialRange()
+    for (let num in matchResultsArr) {
+      const resultUi = resultsUiArr[num];
+      const matchResult = matchResultsArr[num];
+  
+      console.log(`UI Result: ${resultUi}`);
+      console.log(`API Result: ${matchResult}`);
+  
+      expect(resultUi).toContain(matchResult.toString());
+    }
   })
   
 })

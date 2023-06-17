@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { range } from '../../helpers/Range';
 import { factorial } from '../../helpers/FactorialConverter';
-import { FACT_TEST_VALUE, BASE_URL } from '../../helpers/Constants';
+import { BASE_URL } from '../../helpers/Constants';
 import axios from 'axios'
 import FormData from 'form-data'
 
