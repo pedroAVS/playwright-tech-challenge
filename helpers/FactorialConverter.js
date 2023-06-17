@@ -25,8 +25,3 @@ export function factorial(num) {
     const mat = math.evaluate(factorialExpression);
     return mat
 }
-
-export function convertBigNum(num){
-    const api = math.bignumber(num)
-    return api
-}
