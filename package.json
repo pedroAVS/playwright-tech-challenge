@@ -4,15 +4,19 @@
   "description": "",
   "scripts": {
     "test-ui": "npx playwright test --ui",
-    "test": "npx playwright test",
+    "test": "npx playwright test --reporter=line,allure-playwright",
+    "generate-report": "allure generate ./allure-results — clean",
+    "open-report": "allure open ./allure-report",
     "showReport": "npx playwright show-report"
   },
   "keywords": [],
   "author": "Pedro Sousa",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.34.3",
+    "@playwright/test": "^1.35.1",
     "@types/formdata": "^0.10.1",
+    "allure-commandline": "^2.22.4",
+    "allure-playwright": "^2.4.0",
     "axios": "^1.4.0",
     "mathjs": "^11.8.1",
     "ts-node": "^10.9.1"

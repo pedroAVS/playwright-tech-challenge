@@ -1,7 +1,7 @@
 
 # Playwright Tech Challenge
 
-This is a project for the Playwright Tech Challenge. It demonstrates how to use Playwright with TypeScript to automate browser interactions and perform API testing.
+This is a project for the Factorial Calculator Tech Challenge. 
 
 ## Getting Started
 
@@ -41,7 +41,8 @@ The tests will execute and generate a report with the test results.
 
 ## Running the Tests on GitActions
 
-WIP
+Currently the tests will execute on push and pull requests to the Main repository.
+Report artifacts are made available, as well as an Allure report served on a github page (check the latest pages-build-deployment for the link of the page).
 
 ## Test Configuration
 
