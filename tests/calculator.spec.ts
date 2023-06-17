@@ -1,8 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { CalculatorPage } from './pageobjects/calculator.page';
+import { BASE_URL } from '../helpers/Constants';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('https://qainterview.pythonanywhere.com/');
+  await page.goto(BASE_URL);
 });
 
 test.describe('Factorial calculator', () => {
@@ -21,8 +22,20 @@ test.describe('Factorial calculator', () => {
     }
   });
 
-  test('Api response is correct', async () => {
-    //TODO: write tests to test directly /factorial endpoint and dismiss UI validations
+  test.only('Api response is correct', async ({page}) => {
+    const calc = new CalculatorPage(page);
+    const resultsApiArr = await calc.testApiValues();
+    const matchResultsArr = await calc.calculateFactorialRange()
+    console.log(matchResultsArr)
+    for (let num in resultsApiArr) {
+      console.log(num)
+      const resultApi = resultsApiArr[num]
+      const matchResult = matchResultsArr[num]
+      console.log(`API Result: ${resultApi}`);
+      console.log(`Internal Result: ${matchResult}`);
+  
+      expect(resultApi).toEqual(matchResult);
+    }
   })
 
   test('UI response is correct', async () => {

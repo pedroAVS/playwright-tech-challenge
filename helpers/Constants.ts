@@ -3,3 +3,4 @@ export const MAX_VALUE = 100;
 export const FACT_TEST_VALUE = 51090942171709440000;
 export const FACT_10 = 3628800;
 export const FACT_5 = 120;
+export const BASE_URL = "https://qainterview.pythonanywhere.com"

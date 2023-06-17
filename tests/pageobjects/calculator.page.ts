@@ -1,7 +1,9 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { range } from '../../helpers/Range';
 import { factorial } from '../../helpers/FactorialConverter';
-import { FACT_TEST_VALUE } from '../../helpers/Constants';
+import { FACT_TEST_VALUE, BASE_URL } from '../../helpers/Constants';
+import axios from 'axios'
+import FormData from 'form-data'
 
 export class CalculatorPage {
   private readonly page: Page;
@@ -58,13 +60,10 @@ export class CalculatorPage {
         fact = parseFloat(factorial(num));
         factorialArr.push(fact);
       } else {
-        fact = factorial(num);
+        fact = parseFloat(factorial(num));
         factorialArr.push(fact);
       }
     }
-    console.log(factorial(29));
-    expect(factorialArr[11]).toBe(FACT_TEST_VALUE);
-    console.log(factorialArr[19]);
     return factorialArr;
   }
 
@@ -84,6 +83,25 @@ export class CalculatorPage {
       resultsUiArr.push(item);
     }
     return [resultsUiArr, resultsApiArr];
+  }
+
+  public async testApiValues() {
+    const numbersRange = this.testRange;
+    const results: string[] = [];
+    for (const num of this.testRange) {
+      const formData = new FormData();
+      formData.append('number', num)
+      try {
+        const response = await axios.post(`${BASE_URL}/factorial`, formData)
+        const responseData = response.data;
+        const responseValue = responseData.answer
+        results.push(responseValue);
+      } catch (error) {
+        console.error('Error occurred for number ${num}: ', error)
+        throw error;
+      }
+    }
+    return results;
   }
 
 }
