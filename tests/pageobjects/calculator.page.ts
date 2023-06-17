@@ -1,9 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
-import { range } from '../../helpers/Range';
-import { factorial } from '../../helpers/FactorialConverter';
-import { BASE_URL } from '../../helpers/Constants';
-import axios from 'axios'
-import FormData from 'form-data'
+import { range } from '../utils/helpers/Range';
 
 export class CalculatorPage {
   private readonly page: Page;
@@ -50,58 +46,6 @@ export class CalculatorPage {
 
   public async verifyResultMessage(value: number): Promise<void> {
     await expect(this.resultText).toContainText(value.toString());
-  }
-
-  public async calculateFactorialRange(): Promise<number[]> {
-    const factorialArr: number[] = [];
-    for (const num of this.testRange) {
-      let fact: number;
-      if (num < 29) {
-        fact = parseFloat(factorial(num));
-        factorialArr.push(fact);
-      } else {
-        fact = parseFloat(factorial(num));
-        factorialArr.push(fact);
-      }
-    }
-    return factorialArr;
-  }
-
-  public async testValues(): Promise<[any[], any []]> {
-    const resultsUiArr: any[] = [];
-    const resultsApiArr: any[] = [];
-    for (const num of this.testRange) {
-      await this.clearInput();
-      await this.enterNumber(num);
-      await this.clickSubmit();
-      const response = await this.page.waitForResponse('**/factorial');
-      const responseBody = await response.json();
-      const responseValue = responseBody.answer;
-      resultsApiArr.push(responseValue);
-      await this.verifyResultMessage(num);
-      const item: any = await this.getResult();
-      resultsUiArr.push(item);
-    }
-    return [resultsUiArr, resultsApiArr];
-  }
-
-  public async testApiValues() {
-    const numbersRange = this.testRange;
-    const results: string[] = [];
-    for (const num of this.testRange) {
-      const formData = new FormData();
-      formData.append('number', num)
-      try {
-        const response = await axios.post(`${BASE_URL}/factorial`, formData)
-        const responseData = response.data;
-        const responseValue = responseData.answer
-        results.push(responseValue);
-      } catch (error) {
-        console.error('Error occurred for number ${num}: ', error)
-        throw error;
-      }
-    }
-    return results;
   }
 
 }

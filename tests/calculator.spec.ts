@@ -1,6 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { CalculatorPage } from './pageobjects/calculator.page';
-import { BASE_URL } from '../helpers/Constants';
+import { BASE_URL } from './utils/helpers/Constants';
+import { calculateFactorialRange } from '../tests/utils/calculatorUtils';
+import { testValues } from '../tests/utils/testValuesUtils';
+import { testApiValues } from '../tests/utils/testApiUtils'
 
 test.beforeEach(async ({ page }) => {
   await page.goto(BASE_URL);
@@ -8,9 +10,8 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('Factorial calculator', () => {
 
-  test('Should calculate correctly from 10 to 100', async ({ page }) => {  
-    const calc = new CalculatorPage(page);
-    const [resultsUiArr, resultsApiArr] = await calc.testValues();
+  test('Should calculate correctly from 10 to 100', async ({ page }) => {
+    const [resultsUiArr, resultsApiArr] = await testValues(page);
     for (let i = 0; i < resultsUiArr.length; i++) {
       const resultUi = resultsUiArr[i];
       const resultApi = resultsApiArr[i];
@@ -23,9 +24,8 @@ test.describe('Factorial calculator', () => {
   });
 
   test('Api response is correct', async ({page}) => {
-    const calc = new CalculatorPage(page);
-    const resultsApiArr = await calc.testApiValues();
-    const matchResultsArr = await calc.calculateFactorialRange()
+    const matchResultsArr = calculateFactorialRange();
+    const resultsApiArr = await testApiValues();
     for (let num in resultsApiArr) {
       const resultApi = resultsApiArr[num]
       const matchResult = matchResultsArr[num]
@@ -37,9 +37,8 @@ test.describe('Factorial calculator', () => {
   })
 
   test('UI response is correct', async ({page}) => {
-    const calc = new CalculatorPage(page);
-    const [resultsUiArr] = await calc.testValues();
-    const matchResultsArr = await calc.calculateFactorialRange()
+    const [resultsUiArr] = await testValues(page);
+    const matchResultsArr = calculateFactorialRange()
     for (let num in matchResultsArr) {
       const resultUi = resultsUiArr[num];
       const matchResult = matchResultsArr[num];
