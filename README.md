@@ -47,6 +47,8 @@ The tests will execute and generate a report with the test results.
 Currently the tests will execute on push and pull requests to the Main repository.
 Report artifacts are made available, as well as an Allure report served on a github page (check the latest pages-build-deployment for the link of the page).
 
+The workflow can be triggered manually by accessing "Run Tests and Publish Report" workflow and clicking on "Run workflow"
+
 ## Test Configuration
 
 The test configuration can be found in the `playwright.config.ts` file. Modify this file to customize the test settings, such as browser type, test timeout, and test retries.
