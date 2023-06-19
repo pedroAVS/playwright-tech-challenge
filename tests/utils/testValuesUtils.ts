@@ -4,6 +4,7 @@ import { range } from './helpers/Range';
 import { CalculatorPage } from '../pageobjects/calculator.page';
 import { ENDPOINT } from './helpers/Constants';
 
+// Tests a range of values on a calculator page, retrieving results from both the UI and API.
 export async function testValues(page: Page) {
   const calc = new CalculatorPage(page);
   const testRange = range();

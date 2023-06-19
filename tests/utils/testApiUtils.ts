@@ -3,6 +3,7 @@ import { BASE_URL } from './helpers/Constants';
 import { retrieveResponse } from './networkUtils';
 import { range } from './helpers/Range';
 
+// Tests API values by making multiple factorial requests within a given range.
 export async function testApiValues(): Promise<string[]> {
   const results: string[] = [];
   const testRange = range();

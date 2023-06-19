@@ -11,15 +11,7 @@ const config = {
 
 const math = create(all, config)
 
-// const api = math.bignumber("8841761993739701954543616000000");
-// console.log(typeof api, api.toString())
-
-// const factorialExpression = "factorial(29)";
-// const mat = math.evaluate(factorialExpression);
-// console.log(typeof mat, mat.toString())
-
-//console.log(`math.equal(api, mat): ${math.equal(api, mat)}`);
-
+// Return the calculated factorial of a given number
 export function factorial(num) {
     const factorialExpression = `factorial(${num})`;
     const mat = math.evaluate(factorialExpression);

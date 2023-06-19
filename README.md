@@ -3,6 +3,9 @@
 
 This is a project for the Factorial Calculator Tech Challenge. 
 
+> **Warning**
+> This project was build with NodeJS v20.2.0
+
 ## Getting Started
 
 To get started with the project, follow these steps:
