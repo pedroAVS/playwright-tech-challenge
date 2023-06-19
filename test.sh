@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# Navigate to the project directory
-cd /path/to/your/project
-
 # Install dependencies
 npm install
+
+# Install latest browser binaries
+npx playwright install
 
 # Run tests
 npm run test
 
-#show report
-npm run showReport
+# Generate report
+npm run generate-report
+
+# Open report
+npm run open-report
