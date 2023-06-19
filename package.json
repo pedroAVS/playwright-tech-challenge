@@ -5,7 +5,7 @@
   "scripts": {
     "test-ui": "npx playwright test --ui",
     "test": "npx playwright test --reporter=line,allure-playwright",
-    "generate-report": "allure generate ./allure-results — clean",
+    "generate-report": "allure generate ./allure-results",
     "open-report": "allure open ./allure-report",
     "showReport": "npx playwright show-report"
   },
