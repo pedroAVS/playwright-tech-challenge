@@ -49,6 +49,10 @@ jobs:
           ref: gh-pages
           fetch-depth: 0
 
+      - name: Check if allure-results directory exists
+        run: |
+          ls -l ./allure-results
+            
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
         if: always()
