@@ -43,26 +43,25 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
   
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v3
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
         with:
           ref: gh-pages
-          fetch-depth: 0
-
-      - name: Check if allure-results directory exists
-        run: |
-          ls -l ./allure-results
-            
+          path: gh-pages
+  
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
         if: always()
+        #id: allure-report
         with:
           allure_results: allure-results
-          gh_pages: gh-pages
-          allure_report: allure-report
+          #gh_pages: gh-pages
+          #allure_report: allure-report
           allure_history: allure-history
           keep_reports: 20
-
+  
       - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v2
