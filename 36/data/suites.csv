@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 19 09:48:02 GMT 2023","Mon Jun 19 09:48:26 GMT 2023","23872","chromium","","Factorial calculator","","","UI response is correct",""
+"broken","Mon Jun 19 09:47:31 GMT 2023","Mon Jun 19 09:48:01 GMT 2023","30247","chromium","","Factorial calculator","","","Api response is correct",""
+"passed","Mon Jun 19 09:46:03 GMT 2023","Mon Jun 19 09:46:28 GMT 2023","24392","chromium","","Factorial calculator","","","Should calculate correctly from 10 to 100",""
