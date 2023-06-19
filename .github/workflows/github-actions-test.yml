@@ -37,11 +37,6 @@ jobs:
         with:
           name: Playwright Report
           path: ./playwright-report
-        
-      - name: Configure Git
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
   
       - name: Get Allure history
         uses: actions/checkout@v2
