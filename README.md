@@ -1,7 +1,7 @@
 
-# Playwright Tech Challenge
+# Playwright | TypeScript
 
-This is a project for the Factorial Calculator Tech Challenge. 
+This is a technical exercise for the Factorial Calculator web app. 
 
 > **Warning**
 > This project was build with NodeJS v20.2.0
@@ -79,7 +79,7 @@ playwright-tech-challenge/
 └── tsconfig.json
 ```
 
-- `Documentation`: Contains the reports and acceptance criteria asked for this challenge in a markdown language format.
+- `Documentation`: Contains the reports and acceptance criteria in a markdown language format.
 - `package.json` and `package-lock.json`: Define the project dependencies and scripts.
 - `playwright.config.ts`: Configuration file for Playwright.
 - `tests/`: Contains the source code for the tests.
