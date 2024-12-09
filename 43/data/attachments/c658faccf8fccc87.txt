@@ -1,0 +1,182 @@
+UI Result: The factorial of 10 is: 3628800
+API Result: 3628800
+UI Result: The factorial of 11 is: 39916800
+API Result: 39916800
+UI Result: The factorial of 12 is: 479001600
+API Result: 479001600
+UI Result: The factorial of 13 is: 6227020800
+API Result: 6227020800
+UI Result: The factorial of 14 is: 87178291200
+API Result: 87178291200
+UI Result: The factorial of 15 is: 1307674368000
+API Result: 1307674368000
+UI Result: The factorial of 16 is: 20922789888000
+API Result: 20922789888000
+UI Result: The factorial of 17 is: 355687428096000
+API Result: 355687428096000
+UI Result: The factorial of 18 is: 6402373705728000
+API Result: 6402373705728000
+UI Result: The factorial of 19 is: 121645100408832000
+API Result: 121645100408832000
+UI Result: The factorial of 20 is: 2432902008176640000
+API Result: 2432902008176640000
+UI Result: The factorial of 21 is: 51090942171709440000
+API Result: 51090942171709440000
+UI Result: The factorial of 22 is: 1.1240007277776077e+21
+API Result: 1.1240007277776077e+21
+UI Result: The factorial of 23 is: 2.585201673888498e+22
+API Result: 2.585201673888498e+22
+UI Result: The factorial of 24 is: 6.204484017332394e+23
+API Result: 6.204484017332394e+23
+UI Result: The factorial of 25 is: 1.5511210043330986e+25
+API Result: 1.5511210043330986e+25
+UI Result: The factorial of 26 is: 4.0329146112660565e+26
+API Result: 4.0329146112660565e+26
+UI Result: The factorial of 27 is: 1.0888869450418352e+28
+API Result: 1.0888869450418352e+28
+UI Result: The factorial of 28 is: 3.0488834461171387e+29
+API Result: 3.0488834461171387e+29
+UI Result: The factorial of 29 is: 8.841761993739702e+30
+API Result: 8.841761993739702e+30
+UI Result: The factorial of 30 is: 2.6525285981219107e+32
+API Result: 2.6525285981219107e+32
+UI Result: The factorial of 31 is: 8.222838654177922e+33
+API Result: 8.222838654177922e+33
+UI Result: The factorial of 32 is: 2.631308369336935e+35
+API Result: 2.631308369336935e+35
+UI Result: The factorial of 33 is: 8.683317618811886e+36
+API Result: 8.683317618811886e+36
+UI Result: The factorial of 34 is: 2.9523279903960416e+38
+API Result: 2.9523279903960416e+38
+UI Result: The factorial of 35 is: 1.0333147966386145e+40
+API Result: 1.0333147966386145e+40
+UI Result: The factorial of 36 is: 3.7199332678990125e+41
+API Result: 3.7199332678990125e+41
+UI Result: The factorial of 37 is: 1.3763753091226346e+43
+API Result: 1.3763753091226346e+43
+UI Result: The factorial of 38 is: 5.230226174666011e+44
+API Result: 5.230226174666011e+44
+UI Result: The factorial of 39 is: 2.0397882081197444e+46
+API Result: 2.0397882081197444e+46
+UI Result: The factorial of 40 is: 8.159152832478977e+47
+API Result: 8.159152832478977e+47
+UI Result: The factorial of 41 is: 3.345252661316381e+49
+API Result: 3.345252661316381e+49
+UI Result: The factorial of 42 is: 1.40500611775288e+51
+API Result: 1.40500611775288e+51
+UI Result: The factorial of 43 is: 6.041526306337383e+52
+API Result: 6.041526306337383e+52
+UI Result: The factorial of 44 is: 2.658271574788449e+54
+API Result: 2.658271574788449e+54
+UI Result: The factorial of 45 is: 1.1962222086548019e+56
+API Result: 1.1962222086548019e+56
+UI Result: The factorial of 46 is: 5.502622159812089e+57
+API Result: 5.502622159812089e+57
+UI Result: The factorial of 47 is: 2.5862324151116818e+59
+API Result: 2.5862324151116818e+59
+UI Result: The factorial of 48 is: 1.2413915592536073e+61
+API Result: 1.2413915592536073e+61
+UI Result: The factorial of 49 is: 6.082818640342675e+62
+API Result: 6.082818640342675e+62
+UI Result: The factorial of 50 is: 3.0414093201713376e+64
+API Result: 3.0414093201713376e+64
+UI Result: The factorial of 51 is: 1.5511187532873822e+66
+API Result: 1.5511187532873822e+66
+UI Result: The factorial of 52 is: 8.065817517094388e+67
+API Result: 8.065817517094388e+67
+UI Result: The factorial of 53 is: 4.2748832840600255e+69
+API Result: 4.2748832840600255e+69
+UI Result: The factorial of 54 is: 2.308436973392414e+71
+API Result: 2.308436973392414e+71
+UI Result: The factorial of 55 is: 1.2696403353658276e+73
+API Result: 1.2696403353658276e+73
+UI Result: The factorial of 56 is: 7.109985878048635e+74
+API Result: 7.109985878048635e+74
+UI Result: The factorial of 57 is: 4.0526919504877214e+76
+API Result: 4.0526919504877214e+76
+UI Result: The factorial of 58 is: 2.3505613312828785e+78
+API Result: 2.3505613312828785e+78
+UI Result: The factorial of 59 is: 1.3868311854568984e+80
+API Result: 1.3868311854568984e+80
+UI Result: The factorial of 60 is: 8.32098711274139e+81
+API Result: 8.32098711274139e+81
+UI Result: The factorial of 61 is: 5.075802138772248e+83
+API Result: 5.075802138772248e+83
+UI Result: The factorial of 62 is: 3.146997326038794e+85
+API Result: 3.146997326038794e+85
+UI Result: The factorial of 63 is: 1.98260831540444e+87
+API Result: 1.98260831540444e+87
+UI Result: The factorial of 64 is: 1.2688693218588417e+89
+API Result: 1.2688693218588417e+89
+UI Result: The factorial of 65 is: 8.247650592082472e+90
+API Result: 8.247650592082472e+90
+UI Result: The factorial of 66 is: 5.443449390774431e+92
+API Result: 5.443449390774431e+92
+UI Result: The factorial of 67 is: 3.647111091818868e+94
+API Result: 3.647111091818868e+94
+UI Result: The factorial of 68 is: 2.4800355424368305e+96
+API Result: 2.4800355424368305e+96
+UI Result: The factorial of 69 is: 1.711224524281413e+98
+API Result: 1.711224524281413e+98
+UI Result: The factorial of 70 is: 1.1978571669969892e+100
+API Result: 1.1978571669969892e+100
+UI Result: The factorial of 71 is: 8.504785885678623e+101
+API Result: 8.504785885678623e+101
+UI Result: The factorial of 72 is: 6.1234458376886085e+103
+API Result: 6.1234458376886085e+103
+UI Result: The factorial of 73 is: 4.4701154615126844e+105
+API Result: 4.4701154615126844e+105
+UI Result: The factorial of 74 is: 3.307885441519386e+107
+API Result: 3.307885441519386e+107
+UI Result: The factorial of 75 is: 2.48091408113954e+109
+API Result: 2.48091408113954e+109
+UI Result: The factorial of 76 is: 1.8854947016660504e+111
+API Result: 1.8854947016660504e+111
+UI Result: The factorial of 77 is: 1.4518309202828587e+113
+API Result: 1.4518309202828587e+113
+UI Result: The factorial of 78 is: 1.1324281178206297e+115
+API Result: 1.1324281178206297e+115
+UI Result: The factorial of 79 is: 8.946182130782976e+116
+API Result: 8.946182130782976e+116
+UI Result: The factorial of 80 is: 7.156945704626381e+118
+API Result: 7.156945704626381e+118
+UI Result: The factorial of 81 is: 5.797126020747368e+120
+API Result: 5.797126020747368e+120
+UI Result: The factorial of 82 is: 4.753643337012842e+122
+API Result: 4.753643337012842e+122
+UI Result: The factorial of 83 is: 3.945523969720659e+124
+API Result: 3.945523969720659e+124
+UI Result: The factorial of 84 is: 3.314240134565353e+126
+API Result: 3.314240134565353e+126
+UI Result: The factorial of 85 is: 2.81710411438055e+128
+API Result: 2.81710411438055e+128
+UI Result: The factorial of 86 is: 2.4227095383672734e+130
+API Result: 2.4227095383672734e+130
+UI Result: The factorial of 87 is: 2.107757298379528e+132
+API Result: 2.107757298379528e+132
+UI Result: The factorial of 88 is: 1.8548264225739844e+134
+API Result: 1.8548264225739844e+134
+UI Result: The factorial of 89 is: 1.650795516090846e+136
+API Result: 1.650795516090846e+136
+UI Result: The factorial of 90 is: 1.4857159644817615e+138
+API Result: 1.4857159644817615e+138
+UI Result: The factorial of 91 is: 1.352001527678403e+140
+API Result: 1.352001527678403e+140
+UI Result: The factorial of 92 is: 1.2438414054641308e+142
+API Result: 1.2438414054641308e+142
+UI Result: The factorial of 93 is: 1.1567725070816416e+144
+API Result: 1.1567725070816416e+144
+UI Result: The factorial of 94 is: 1.087366156656743e+146
+API Result: 1.087366156656743e+146
+UI Result: The factorial of 95 is: 1.032997848823906e+148
+API Result: 1.032997848823906e+148
+UI Result: The factorial of 96 is: 9.916779348709496e+149
+API Result: 9.916779348709496e+149
+UI Result: The factorial of 97 is: 9.619275968248212e+151
+API Result: 9.619275968248212e+151
+UI Result: The factorial of 98 is: 9.426890448883248e+153
+API Result: 9.426890448883248e+153
+UI Result: The factorial of 99 is: 9.332621544394415e+155
+API Result: 9.332621544394415e+155
+UI Result: The factorial of 100 is: 9.332621544394415e+157
+API Result: 9.332621544394415e+157

@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8124","UI response is correct","chromium","Mon Dec 09 21:40:17 GMT 2024","passed","Mon Dec 09 21:40:25 GMT 2024","Factorial calculator","","",""
+"","8444","Should calculate correctly from 10 to 100","chromium","Mon Dec 09 21:40:02 GMT 2024","passed","Mon Dec 09 21:40:10 GMT 2024","Factorial calculator","","",""
+"","6554","Api response is correct","chromium","Mon Dec 09 21:40:10 GMT 2024","passed","Mon Dec 09 21:40:17 GMT 2024","Factorial calculator","","",""
